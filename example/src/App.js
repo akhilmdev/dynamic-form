@@ -1,10 +1,17 @@
 import React from 'react'
 
-import { ExampleComponent } from 'dynamic-form-core'
+import { DynamicFrom } from 'dynamic-form-core'
 import 'dynamic-form-core/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const formData = [{
+    label: 'email',
+    value: '',
+    type: 'input',
+    id: 'email',
+    className: ''
+  }]
+  return <DynamicFrom formData={formData} />
 }
 
 export default App
