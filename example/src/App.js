@@ -5,41 +5,45 @@ import 'dynamic-form-core/dist/index.css'
 
 const App = () => {
   const formData = [{
-    label: 'email',
+    label: 'input lable',
     value: '',
     type: 'input',
     id: 'email',
-    className: ''
+    className: '',
+    fieldType: 'input'
   },{
-    label: 'email',
+    label: 'checkbox lable',
     value: '',
     type: 'checkbox',
     id: 'email',
-    className: ''
+    className: '',
+    fieldType: 'input'
   },{
-    label: 'email',
+    label: 'date lable',
     value: '',
     type: 'date',
     id: 'email',
-    className: ''
+    className: '',
+    fieldType: 'input'
   },{
-    label: 'email',
+    label: 'select lable',
     value: '',
-    type: 'select',
     id: 'email',
-    className: ''
+    className: '',
+    fieldType: 'select'
   },{
-    label: 'email',
+    label: 'textarea lable',
     value: '',
-    type: 'textarea',
-    id: 'email',
-    className: ''
+    id: 'textarea',
+    className: '',
+    fieldType: 'textarea'
   },{
-    label: 'email',
+    label: 'radio lable',
     value: '',
-    type: 'radiobutton',
+    type: 'radio',
     id: 'email',
-    className: ''
+    className: '',
+    fieldType: 'input'
   },]
   return <DynamicFrom formData={formData} />
 }
