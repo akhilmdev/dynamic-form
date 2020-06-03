@@ -10,7 +10,37 @@ const App = () => {
     type: 'input',
     id: 'email',
     className: ''
-  }]
+  },{
+    label: 'email',
+    value: '',
+    type: 'checkbox',
+    id: 'email',
+    className: ''
+  },{
+    label: 'email',
+    value: '',
+    type: 'date',
+    id: 'email',
+    className: ''
+  },{
+    label: 'email',
+    value: '',
+    type: 'select',
+    id: 'email',
+    className: ''
+  },{
+    label: 'email',
+    value: '',
+    type: 'textarea',
+    id: 'email',
+    className: ''
+  },{
+    label: 'email',
+    value: '',
+    type: 'radiobutton',
+    id: 'email',
+    className: ''
+  },]
   return <DynamicFrom formData={formData} />
 }
 

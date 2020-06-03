@@ -12,7 +12,6 @@ class DynamicFromCore extends Component<DynamicFormCoreInterface, any> {
         return (
             <React.Fragment>
                 { this.props.formData.map( (formField: FormConfig) => {
-                    console.log('+++++++++', formField.type);
                     return <DynamicFormFieldSelection
                                 key={formField.id + '-' + formField.type}
                                 fieldConfig={formField} />

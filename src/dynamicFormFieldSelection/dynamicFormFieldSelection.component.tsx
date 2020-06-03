@@ -1,22 +1,25 @@
 import React from 'react';
 import { Input } from '../dynamicFormField/input.component';
+import { Checkbox } from '../dynamicFormField/checkbox.component';
+import { DatePicker } from '../dynamicFormField/datepicker.component';
+import { RadioButton } from '../dynamicFormField/radiobutton.component';
+import { TextArea } from '../dynamicFormField/textarea.component';
+import { SelectBox } from '../dynamicFormField/select.component';
 
 export const DynamicFormFieldSelection = (props: any) => {
     switch (props.fieldConfig.type) {
         case 'input':
-            return <Input config={props.fieldConfig.type}/>
+            return <Input {...props.fieldConfig}/>
         case 'checkbox':
-            return <p>this field is implementing</p>
-        case 'datepicker':
-            return <p>this field is implementing</p>
+            return <Checkbox {...props.fieldConfig} />
+        case 'date':
+            return <DatePicker {...props.fieldConfig} />
         case 'select':
-            return <p>this field is implementing</p>
+            return <SelectBox {...props.fieldConfig} />
         case 'textarea':
-            return <p>this field is implementing</p>
+            return <TextArea {...props.fieldConfig} />
         case 'radiobutton':
-            return <p>this field is implementing</p>
-        case 'toggle':
-            return <p>this field is implementing</p>
+            return <RadioButton {...props.fieldConfig} />
         default:
             return <p> Please provide a vaild filed type. Current field type is {props.fieldConfig.type} </p>
     }
